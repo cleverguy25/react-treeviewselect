@@ -1,0 +1,21 @@
+{
+    "version": "2.4.2",
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "outDir": "dist/",
+        "skipDefaultLibCheck": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": [ "dom", "es2015", "es2015.promise", "es2015.generator", "es2015.iterable"]
+    },
+    "files": [
+        "src/index.ts"
+    ]
+}

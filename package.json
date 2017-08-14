@@ -1,0 +1,53 @@
+{
+  "name": "react-treeviewselect",
+  "version": "1.0.0",
+  "description": "A react based select control where the drop down is a tree view.",
+  "main": "dist/index.js",
+  "umd:main": "dist/umd/index.js",
+  "module": "dist/es/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run lint && npm run build-commonjs && npm run build-es && npm run build-umd && cpx src/TreeViewSelect.css dist",
+    "build-commonjs": "tsc -p tsconfig.commonjs.json",
+    "build-umd": "tsc -p tsconfig.umd.json",
+    "build-es": "tsc",
+    "rollup": "rollup -c",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleverguy25/react-treeviewselect.git"
+  },
+  "keywords": [
+    "react",
+    "tree",
+    "select"
+  ],
+  "author": "Cleve Littlefield",
+  "contributors": [
+    {
+      "name": "Cleve Littlefield",
+      "email": "cleverguy25@hotmail.com",
+      "url": "https://github.com/cleverguy25"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cleverguy25/react-treeviewselect/issues"
+  },
+  "homepage": "https://github.com/cleverguy25/react-treeviewselect#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.0",
+    "@types/prop-types": "^15.5.1",
+    "@types/react": "^16.0.2",
+    "cpx": "^1.5.0",
+    "tslint": "^5.6.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.4.2"
+  }
+}
