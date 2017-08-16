@@ -327,7 +327,7 @@ export class TreeViewSelect<T> extends React.Component<ITreeViewSelectProps<T>, 
                 this.setState((prevState: ITreeViewSelectState<T>) => {
                     const key = this.props.getKey(prevState.selectedItem);
                     const index = this.findHighlightIndex(prevState.flattenedItems, key);
-                    return { highlightItemIndex: index, highlightItem: prevState.selectedItem };
+                    return { highlightItemIndex: index, highlightItem: prevState.selectedItem, isOpen: false };
                 });
                 break;
         }
