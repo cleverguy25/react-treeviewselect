@@ -216,7 +216,7 @@ export class TreeViewSelect<T> extends React.Component<ITreeViewSelectProps<T>, 
     private handleItemClick(item: T, index: number, event: any) {
         event.stopPropagation();
         this.props.onSelectedItemChange(item);
-        this.setState({ highlightItemIndex: index, highlightItem: item, selectedItem: item });
+        this.setState({ highlightItemIndex: index, highlightItem: item, selectedItem: item, isOpen: false });
     }
 
     private handleArrowClick(key: any, event: any) {
@@ -321,6 +321,13 @@ export class TreeViewSelect<T> extends React.Component<ITreeViewSelectProps<T>, 
                     const newItem = prevState.highlightItem;
                     this.props.onSelectedItemChange(newItem);
                     return { selectedItem: newItem };
+                });
+                break;
+            case "Escape":
+                this.setState((prevState: ITreeViewSelectState<T>) => {
+                    const key = this.props.getKey(prevState.selectedItem);
+                    const index = this.findHighlightIndex(prevState.flattenedItems, key);
+                    return { highlightItemIndex: index, highlightItem: prevState.selectedItem };
                 });
                 break;
         }
