@@ -1,6 +1,6 @@
 {
   "name": "react-treeviewselect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react based select control where the drop down is a tree view.",
   "main": "dist/index.js",
   "umd:main": "dist/umd/index.js",
