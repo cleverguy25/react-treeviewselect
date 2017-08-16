@@ -1,7 +1,7 @@
 # react-treeviewselect
 A react based select control where the drop down is a tree view.
 
-React/JS is not first language, so open to suggestions for improvements as I have not seen a useful version of this control elsewhere, so I want this to be robust.
+React/JS is not my first language, so open to suggestions for improvements as I have not seen a useful version of this control elsewhere, so I want this to be robust.
 
 ## Features
 
